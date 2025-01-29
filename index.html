@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/68a57e6c2b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+               <img src="images/log.jpg" class="log">
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <P>Full stack Developer</P>
+                <h1>Hi,I'm <span>Suruj</span> <br>Jamal from India </h1>
+            </div>
+        </div>
+    </div>
+   <! ------- -----------------About-------------------------------------------------------------------- >
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/bg.jpg" class="bg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hii!! My name is SURUJ JAMAL.I belong to Assam.I am doing my B.TECH in ECE at NIT Silchar.
+                        Now coming to me, I am sweet smart, confident, and hardworking person. I am a cool
+                        hearted person, so usually see every difficulty with a positive side and keep
+                        myself always smiling which makes me stronger even more.I can carry out any task
+                        assigned to me without hesitation.My hobbies are Internet surfing, playing Cricket,BasketBall,
+                        Listening to music, watching the new Movies. In my spare time, I like to read news on my phone
+                         and traveling to my hometown.</p>
+
+                        <div class="tab-titles ">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Programming Languages: </span><br> C, C++, JavaScript, SQL.</li>
+                                <li><span>Frontend:</span><br> HTML, CSS, React.js, JavaScript.</li>
+                                <li><span>Backend</span><br> Node.js, Express.js, MongoDB, SQL.</li>
+                                <li><span>Technical Skills</span><br> Problem Solving (DSA).</li>
+                                <li><span>Soft Skills</span><br> Event Management, Time Management, Team Player, Adaptable.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span> Team Leadership</span><br> Served as the Front-end Team Leader, managing the team, design process, and workflow.</li>
+                                <li><span>Website Development</span><br> Led the development of a website aimed at bridging the gap between medical and technical institutes.</li>
+                                <li><span>Facilitation</span><br>Facilitated collaboration among researchers, pathologists, doctors, and engineers through the website</li>
+                        
+                               
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2017</span><br>Class 10 from Jawahar Navodaya Vidyalaya,Darrang</li>
+                                <li><span>2019</span><br> Class 12 from Jawahar Navodaya Vidyalaya,Darrang</li>
+                                <li><span>2025</span><br> B.Tech from NIT Silchar</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- ----------------------------------------------   services-------------------------------------------------------------------------------->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h3> Frontend Development</h3>
+                    <p>I design and develop modern, responsive, and interactive web applications
+                         with a strong focus on UI/UX, performance optimization, and cross-browser
+                         compatibility.I specialize in creating engaging landing pages
+                         and full-scale web solutions using HTML, CSS, JavaScript, and modern frameworks.:</p>
+                          <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h3>Software Development & Analysis</h3>
+                    <p>I provide efficient and scalable software solutions, ensuring optimized 
+                        performance and clean code structure. My expertise includes designing, developing,
+                        and debugging applications while analyzing system requirements to deliver high-quality results.</p>
+                          <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h3>Database Management (SQL)</h3>
+                    <p>I specialize in SQL-based database design and management, ensuring efficient data storage,
+                         retrieval, and security. Whether it's writing optimized queries, managing relational databases, 
+                         maintaining data integrity, I help streamline database operations for businesses.</p>
+                          <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------ -----------------portfolio--------------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="Work-list">
+        <div class="work">
+        <img src="images/work1.jpg">
+        <div class="Layer">
+            <h3>project1</h3>
+            <p>suruj7861.github.io/myportfolio/ </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+           
+        </div>
+    </div>
+    <div class="work">
+        <img src="images/work2.jpg">
+        <div class="Layer">
+            <h3>Project2</h3>
+            <p>https://keen-peony-0015d2.netlify.app</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+           
+        </div>
+    </div>
+    <div class="work">
+        <img src="images/work3.jpg">
+        <div class="Layer">
+            <h3>project3</h3>
+            <p>https://suruj7861.github.io/DragonGame/JavaScript%20Dragon%20Game</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+           
+        </div>
+    </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!----------------Contact----------------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1><div class="sub-title">contact Me</div></h1>
+                <p><i class="fa-solid fa-paper-plane"></i>suruj7861@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>7002632059</p>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1IiQGvzWH6KQzEk199twjweEJ5otHcmtQ/view?usp=sharing" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            
+             </div>
+    </div>
+    <div class="copy-right">
+        <P>copyright@ suruj<i class="fa-solid fa-heart"></i></P>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwCMAsayvxkZTlQvKHF2d8X_cu3A_DyMQGpzRF3WOEWC29UQL1pK_Jc7DykttlTnIwHAg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+       msg.innerHTML="Message send successfully"
+       setTimeout(function()
+       {
+          msg.innerHTML=""
+           },1000)
+           form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right="0";
+    }
+    function closemenu(){
+      sidemenu.style.right="-200px";
+    }
+  </script>
+
+</body>
+</html>
